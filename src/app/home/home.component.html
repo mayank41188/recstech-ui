@@ -25,34 +25,34 @@
       <div class="collapse navbar-collapse pe-md-5" id="collapsibleNavbar">
         <ul class="navbar-nav align-items-center ms-auto">
           <li class="nav-item">
-            <a class="nav-link" href="">Home</a>
+            <a class="nav-link" routerLink="/home">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/about">About Us</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Services</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Link</a></li>
-              <li><a class="dropdown-item" href="#">Another link</a></li>
-              <li><a class="dropdown-item" href="#">A third link</a></li>
+              <li><a class="dropdown-item">Link</a></li>
+              <li><a class="dropdown-item">Another link</a></li>
+              <li><a class="dropdown-item">A third link</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Technologies</a>
+            <a class="nav-link">Technologies</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Blog</a>
+            <a class="nav-link" routerLink="/blog">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Contact Us</a>
+            <a class="nav-link">Contact Us</a>
           </li>
           <button class="searchbtn"><img src="../assets/icons/ion_search.svg" alt="" width="20"></button>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="banner text-white wow fadeIn">
+  <div class="banner text-white">
     <img src="../assets/images/banner.png" alt="">
   
     <div class="bennertext">
@@ -67,7 +67,7 @@
         services and solutions to 40+ customers across multiple <br class="mbbr">
         geographic regions.</p>
   
-      <div class="d-flex align-items-center mt-2 mt-md-4 wow rollIn">
+      <div class="d-flex align-items-center mt-2 mt-md-4 wow zoomInUp" data-wow-delay="0.2s">
         <button mat-raised-button class="bg-primary text-white rounded-pill me-3">Get Start Now <mat-icon>
             keyboard_double_arrow_right</mat-icon></button>
         <button mat-icon-button class="bg-primary text-white me-3">
@@ -80,15 +80,59 @@
   
   <section class="bg-dark text-white" style="background: url(../assets/images/blue-bg.png);">
     <div class="container px-md-5">
-      <h2 class="text-center mx-auto">Checkout Our <span class="text-primary">Company</span> <br class="mbbr">
+      <h2 class="text-center mx-auto wow slideInDown">Checkout Our <span class="text-primary">Company</span> <br class="mbbr">
         Services Below</h2>
   
-      <div id="demo" class="carousel slide Cservice">
+      <div id="servicecarousel" class="carousel slide Cservice">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="row">
               <div class="col-md-3 pb-4">
-                <mat-card class="text-center service-1 mb-4 wow fadeIn">
+                <mat-card class="text-center service-1 mb-4 wow fadeInUp">
+                  <img src="../assets/icons/service-1.svg" alt="" width="55" class="mb-4">
+                  <h5 class="mb-4">Web <br class="mbbr"> Development</h5>
+                  <p>Recstech technologies is one of the premier software development firms.</p>
+                  <button mat-icon-button class="bg-transparent">
+                    <mat-icon>east</mat-icon>
+                  </button>
+                </mat-card>
+              </div>
+              <div class="col-md-3 pb-4">
+                <mat-card class="text-center service-2 mb-4 wow fadeInUp" data-wow-delay="0.2s">
+                  <img src="../assets/icons/service-2.svg" alt="" width="55" class="mb-4">
+                  <h5 class="mb-4">Mobile <br class="mbbr"> Development</h5>
+                  <p>Recstech technologies is one of the premier software development firms.</p>
+                  <button mat-icon-button class="bg-transparent">
+                    <mat-icon>east</mat-icon>
+                  </button>
+                </mat-card>
+              </div>
+              <div class="col-md-3 pb-4">
+                <mat-card class="text-center service-3 mb-4 wow fadeInUp" data-wow-delay="0.4s">
+                  <img src="../assets/icons/service-3.svg" alt="" width="55" class="mb-4">
+                  <h5 class="mb-4">UI/UX <br class="mbbr"> Design</h5>
+                  <p>Recstech technologies is one of the premier software development firms.</p>
+                  <button mat-icon-button class="bg-transparent">
+                    <mat-icon>east</mat-icon>
+                  </button>
+                </mat-card>
+              </div>
+              <div class="col-md-3 pb-4">
+                <mat-card class="text-center service-4 mb-4 wow fadeInUp" data-wow-delay="0.6s">
+                  <img src="../assets/icons/service-4.svg" alt="" width="55" class="mb-4">
+                  <h5 class="mb-4">Cyber <br class="mbbr"> Security</h5>
+                  <p>Recstech technologies is one of the premier software development firms.</p>
+                  <button mat-icon-button class="bg-transparent">
+                    <mat-icon>east</mat-icon>
+                  </button>
+                </mat-card>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-3 pb-4">
+                <mat-card class="text-center service-1 mb-4">
                   <img src="../assets/icons/service-1.svg" alt="" width="55" class="mb-4">
                   <h5 class="mb-4">Web <br class="mbbr"> Development</h5>
                   <p>Recstech technologies is one of the premier software development firms.</p>
@@ -129,20 +173,63 @@
               </div>
             </div>
           </div>
-          <!-- <div class="carousel-item"></div> -->
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-3 pb-4">
+                <mat-card class="text-center service-1 mb-4">
+                  <img src="../assets/icons/service-1.svg" alt="" width="55" class="mb-4">
+                  <h5 class="mb-4">Web <br class="mbbr"> Development</h5>
+                  <p>Recstech technologies is one of the premier software development firms.</p>
+                  <button mat-icon-button class="bg-transparent">
+                    <mat-icon>east</mat-icon>
+                  </button>
+                </mat-card>
+              </div>
+              <div class="col-md-3 pb-4">
+                <mat-card class="text-center service-2 mb-4">
+                  <img src="../assets/icons/service-2.svg" alt="" width="55" class="mb-4">
+                  <h5 class="mb-4">Mobile <br class="mbbr"> Development</h5>
+                  <p>Recstech technologies is one of the premier software development firms.</p>
+                  <button mat-icon-button class="bg-transparent">
+                    <mat-icon>east</mat-icon>
+                  </button>
+                </mat-card>
+              </div>
+              <div class="col-md-3 pb-4">
+                <mat-card class="text-center service-3 mb-4">
+                  <img src="../assets/icons/service-3.svg" alt="" width="55" class="mb-4">
+                  <h5 class="mb-4">UI/UX <br class="mbbr"> Design</h5>
+                  <p>Recstech technologies is one of the premier software development firms.</p>
+                  <button mat-icon-button class="bg-transparent">
+                    <mat-icon>east</mat-icon>
+                  </button>
+                </mat-card>
+              </div>
+              <div class="col-md-3 pb-4">
+                <mat-card class="text-center service-4 mb-4">
+                  <img src="../assets/icons/service-4.svg" alt="" width="55" class="mb-4">
+                  <h5 class="mb-4">Cyber <br class="mbbr"> Security</h5>
+                  <p>Recstech technologies is one of the premier software development firms.</p>
+                  <button mat-icon-button class="bg-transparent">
+                    <mat-icon>east</mat-icon>
+                  </button>
+                </mat-card>
+              </div>
+            </div>
+          </div>
         </div>
   
         <!-- Indicators/dots -->
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#servicecarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#servicecarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#servicecarousel" data-bs-slide-to="2"></button>
         </div>
         <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#servicecarousel" data-bs-slide="prev">
           <img src="../assets/icons/prev.svg" alt="">
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#servicecarousel" data-bs-slide="next">
           <img src="../assets/icons/next.svg" alt="">
         </button>
       </div>
@@ -154,12 +241,12 @@
     <div class="container px-md-5">
       <div class="row align-items-center">
         <div class="col-md-6">
-          <p class="text-primary fw-semibold">| MISSION & VISION</p>
-          <h2>The Best Digital Agency <br class="mbbr"> <span class="text-primary">Around</span> The World</h2>
+          <p class="text-primary fw-semibold wow slideInLeft">| MISSION & VISION</p>
+          <h2 class="wow slideInLeft">The Best Digital Agency <br class="mbbr"> <span class="text-primary">Around</span> The World</h2>
   
           <mat-tab-group class="missionTab mt-4">
             <mat-tab label="Our Mission"> 
-              <p class="mt-4">Recstech technologies is one of the premier software development firms developing and delivering computer software development, business intelligence applications, custom software development services, workflow application development, desktop applications.</p>
+              <p class="mt-4 wow fadeInUp">Recstech technologies is one of the premier software development firms developing and delivering computer software development, business intelligence applications, custom software development services, workflow application development, desktop applications.</p>
             </mat-tab>
             <mat-tab label="Our Vision"> Content 2 </mat-tab>
             <mat-tab label="Our History"> Content 3 </mat-tab>
@@ -168,7 +255,7 @@
         </div>
         <div class="col-md-6">
           <mat-accordion>
-            <mat-expansion-panel #panel hideToggle>
+            <mat-expansion-panel #panel hideToggle class="wow fadeInUp">
               <mat-expansion-panel-header>
                 <mat-panel-title class="fw-bold">
                   01. what is our Mission?
@@ -183,7 +270,7 @@
               <p>This is the primary content of the panel.</p>
             </mat-expansion-panel>
   
-            <mat-expansion-panel class="mt-3" #panel1 hideToggle>
+            <mat-expansion-panel #panel1 hideToggle class="mt-3 wow fadeInUp" data-wow-delay="0.2s">
               <mat-expansion-panel-header>
                 <mat-panel-title class="fw-bold">
                   02. what do we do?
@@ -198,7 +285,7 @@
               <p>This is the primary content of the panel.</p>
             </mat-expansion-panel>
   
-            <mat-expansion-panel class="mt-3" #panel2 hideToggle>
+            <mat-expansion-panel #panel2 hideToggle class="mt-3 wow fadeInUp" data-wow-delay="0.4s">
               <mat-expansion-panel-header>
                 <mat-panel-title class="fw-bold">
                   03. How to connect to our Team?
@@ -221,14 +308,14 @@
   <section class="bg-dark text-white" style="background: url(../assets/images/blue-bg.png);">
     <div class="container px-md-5">
       <div class="text-center mx-auto mb-50">
-        <h2>Products of <br class="mbbr"> <span class="text-primary">Recstech</span> Technologies
+        <h2 class="wow slideInUp">Products of <br class="mbbr"> <span class="text-primary">Recstech</span> Technologies
         </h2>
-        <p class="text-white">A showcase of the in-house built in products for partners and clients.</p>
+        <p class="text-white wow slideInUp">A showcase of the in-house built in products for partners and clients.</p>
       </div>
   
       <div class="row products">
         <div class="col-md-4 pb-4">
-          <mat-card class="h-100">
+          <mat-card class="h-100 wow fadeInDown">
             <img src="../assets/images/dms.png" alt="" class="mb-3">
             <h4>Dealer Management System</h4>
             <p>A Dealer Management System (DMS) is a comprehensive software solution designed to streamline and enhance the operations of automotive dealerships.</p>
@@ -239,7 +326,7 @@
           </mat-card>
         </div>
         <div class="col-md-4 pb-4">
-          <mat-card class="h-100">
+          <mat-card class="h-100 wow fadeInDown" data-wow-delay="0.2s">
             <img src="../assets/images/proficient.png" alt="" class="mb-3" >
             <h4>Proficient</h4>
             <p>PROFICIENT is a 5th generation software solution for Construction Project Management. This AI & Cloud based solution aims to resolve all current challenges facing the construction industry.</p>
@@ -250,7 +337,7 @@
           </mat-card>
         </div>
         <div class="col-md-4 pb-4">
-          <mat-card class="h-100 ">
+          <mat-card class="h-100 wow fadeInDown" data-wow-delay="0.4s">
             <img src="../assets/images/LOGit.png" alt="" class="mb-3">
             <h4>Incident Management Tool</h4>
             <p>LOGIT is a cloud-based software that manages incidents, emergencies as well as daily operations in real time.</p>
@@ -268,12 +355,50 @@
     <div class="container px-md-5">
       <div class="row">
         <div class="col-md-8">
-          <p class="text-primary fw-semibold text-uppercase">| Our technology</p>
-          <h2 class="md:w-75">The Right Place For Your <br class="mbbr"> <span class="text-primary">Digital</span> Business</h2>
+          <p class="text-primary fw-semibold text-uppercase wow slideInLeft">| Our technology</p>
+          <h2 class="wow slideInLeft">The Right Place For Your <br class="mbbr"> <span class="text-primary">Digital</span> Business</h2>
   
-          <div id="demo1" class="carousel slide techCarousel mt-5">
+          <div id="techcarousel" class="carousel slide techCarousel mt-5">
             <div class="carousel-inner">
               <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-3">
+                    <mat-card class="text-center mb-4 techcard wow zoomInUp">
+                      <img src="../assets/icons/andriod.svg" alt="" width="55" class="mb-3">
+                      <h6>Android</h6>
+  
+                      <div class="techDiv">
+                        <h6>Android</h6>
+                        <p class="m-0">Android is a mobile operating system based on a modified version of the Linux kernel and other open-source software</p>
+                      </div>
+                    </mat-card>
+                  </div>
+                  <div class="col-md-3">
+                    <mat-card class="text-center mb-4 techcard wow zoomInUp" data-wow-delay="0.2s">
+                      <img src="../assets/icons/IOS.svg" alt="" width="55" class="mb-3">
+                      <h6>IOS</h6>
+  
+                      <div class="techDiv">
+                        <h6>IOS</h6>
+                        <p class="m-0">iOS is a mobile operating system developed by Apple Inc. exclusively for its hardware.It is the operating system that powers many of the company's mobile devices.</p>
+                      </div>
+                    </mat-card>
+                  </div>
+                  <div class="col-md-3">
+                    <mat-card class="text-center mb-4 techcard wow zoomInUp" data-wow-delay="0.4s">
+                      <img src="../assets/icons/Angular.svg" alt="" width="55" class="mb-3">
+                      <h6>Angular</h6>
+  
+                      <div class="techDiv">
+                        <h6>Angular</h6>
+                        <p class="m-0">Angular is a TypeScript-based, free and open-source single-page web application framework led by the Angular Team at Google and by a community of individuals and corporations.</p>
+                      </div>
+                    </mat-card>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
                 <div class="row">
                   <div class="col-md-3">
                     <mat-card class="text-center mb-4 techcard">
@@ -310,13 +435,12 @@
                   </div>
                 </div>
               </div>
-              <!-- <div class="carousel-item"></div> -->
             </div>
       
             <!-- Indicators/dots -->
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#demo1" data-bs-slide-to="0" class="active"></button>
-              <button type="button" data-bs-target="#demo1" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#techcarousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#techcarousel" data-bs-slide-to="1"></button>
             </div>
           </div>
         </div>
@@ -326,11 +450,72 @@
   
   <section class="bg-dark text-white" style="background: url(../assets/images/blue-bg.png);">
     <div class="container px-md-5">
-      <h2 class="text-center mx-auto">Our Awesome <span class="text-primary">Creative</span> <br class="mbbr"> Team Members</h2>
+      <h2 class="text-center mx-auto wow slideInDown">Our Awesome <span class="text-primary">Creative</span> <br class="mbbr"> Team Members</h2>
   
-      <div id="demo3" class="carousel slide Cservice">
+      <div id="teamcarousel" class="carousel slide Cservice">
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="mb-4 teamcard wow fadeInUpBig">
+                  <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
+                  <div class="teamcontent">
+                    <h6>Dipankar Mitra</h6>
+                    <p>Group MD & CEO</p>
+                    <div class="d-flex">
+                      <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
+                      <a href="" class="me-2"><img src="../assets/icons/instagram.svg" alt=""></a>
+                      <a href="" class="me-2"><img src="../assets/icons/facebook.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mb-4 teamcard wow fadeInUpBig" data-wow-delay="0.2s">
+                  <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
+                  <div class="teamcontent">
+                    <h6>Dipankar Mitra</h6>
+                    <p>Group MD & CEO</p>
+                    <div class="d-flex">
+                      <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
+                      <a href="" class="me-2"><img src="../assets/icons/instagram.svg" alt=""></a>
+                      <a href="" class="me-2"><img src="../assets/icons/facebook.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mb-4 teamcard wow fadeInUpBig" data-wow-delay="0.4s">
+                  <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
+                  <div class="teamcontent">
+                    <h6>Dipankar Mitra</h6>
+                    <p>Group MD & CEO</p>
+                    <div class="d-flex">
+                      <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
+                      <a href="" class="me-2"><img src="../assets/icons/instagram.svg" alt=""></a>
+                      <a href="" class="me-2"><img src="../assets/icons/facebook.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mb-4 teamcard wow fadeInUpBig" data-wow-delay="0.6s">
+                  <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
+                  <div class="teamcontent">
+                    <h6>Dipankar Mitra</h6>
+                    <p>Group MD & CEO</p>
+                    <div class="d-flex">
+                      <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
+                      <a href="" class="me-2"><img src="../assets/icons/instagram.svg" alt=""></a>
+                      <a href="" class="me-2"><img src="../assets/icons/facebook.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="carousel-item">
             <div class="row">
               <div class="col-md-3">
                 <div class="mb-4 teamcard">
@@ -390,20 +575,80 @@
               </div>
             </div>
           </div>
-          <!-- <div class="carousel-item"></div> -->
+
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="mb-4 teamcard">
+                  <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
+                  <div class="teamcontent">
+                    <h6>Dipankar Mitra</h6>
+                    <p>Group MD & CEO</p>
+                    <div class="d-flex">
+                      <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
+                      <a href="" class="me-2"><img src="../assets/icons/instagram.svg" alt=""></a>
+                      <a href="" class="me-2"><img src="../assets/icons/facebook.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mb-4 teamcard">
+                  <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
+                  <div class="teamcontent">
+                    <h6>Dipankar Mitra</h6>
+                    <p>Group MD & CEO</p>
+                    <div class="d-flex">
+                      <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
+                      <a href="" class="me-2"><img src="../assets/icons/instagram.svg" alt=""></a>
+                      <a href="" class="me-2"><img src="../assets/icons/facebook.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mb-4 teamcard">
+                  <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
+                  <div class="teamcontent">
+                    <h6>Dipankar Mitra</h6>
+                    <p>Group MD & CEO</p>
+                    <div class="d-flex">
+                      <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
+                      <a href="" class="me-2"><img src="../assets/icons/instagram.svg" alt=""></a>
+                      <a href="" class="me-2"><img src="../assets/icons/facebook.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="mb-4 teamcard">
+                  <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
+                  <div class="teamcontent">
+                    <h6>Dipankar Mitra</h6>
+                    <p>Group MD & CEO</p>
+                    <div class="d-flex">
+                      <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
+                      <a href="" class="me-2"><img src="../assets/icons/instagram.svg" alt=""></a>
+                      <a href="" class="me-2"><img src="../assets/icons/facebook.svg" alt=""></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
   
         <!-- Indicators/dots -->
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#demo3" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#demo3" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#demo3" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#teamcarousel" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#teamcarousel" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#teamcarousel" data-bs-slide-to="2"></button>
         </div>
         <!-- Left and right controls/icons -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#demo3" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#teamcarousel" data-bs-slide="prev">
           <img src="../assets/icons/prev.svg" alt="">
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#demo3" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#teamcarousel" data-bs-slide="next">
           <img src="../assets/icons/next.svg" alt="">
         </button>
       </div>
@@ -414,15 +659,15 @@
   <section style="background: url(../assets/images/backgroung.png);">
     <div class="container px-md-5">
   
-      <p class="text-primary fw-semibold text-uppercase">| CLIENT REVIEWS</p>
-          <h2>What <span class="text-primary">People And Clients</span> <br class="mbbr"> Think About Us?</h2>
+      <p class="text-primary fw-semibold text-uppercase wow slideInLeft">| CLIENT REVIEWS</p>
+        <h2 class="wow slideInLeft">What <span class="text-primary">People And Clients</span> <br class="mbbr"> Think About Us?</h2>
   
-          <div id="demo4" class="carousel clientcarousel slide mt-5" data-bs-ride="carousel">
+          <div id="clientCarousel" class="carousel clientcarousel slide mt-5" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="row">
                   <div class="col-md-4">
-                    <mat-card class="text-center mb-4">
+                    <mat-card class="text-center mb-4 wow fadeInDownBig">
                       <img src="../assets/images/team-1.png" alt="" class="mb-3 rounded-circle" width="80">
                       <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <div class="mb-3">
@@ -437,7 +682,7 @@
                     </mat-card>
                   </div>
                   <div class="col-md-4">
-                    <mat-card class="text-center mb-4">
+                    <mat-card class="text-center mb-4 wow fadeInDownBig" data-wow-delay="0.2s">
                       <img src="../assets/images/team-1.png" alt="" class="mb-3 rounded-circle" width="80">
                       <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <div class="mb-3">
@@ -452,7 +697,7 @@
                     </mat-card>
                   </div>
                   <div class="col-md-4">
-                    <mat-card class="text-center mb-4">
+                    <mat-card class="text-center mb-4 wow fadeInDownBig" data-wow-delay="0.4s">
                       <img src="../assets/images/team-1.png" alt="" class="mb-3 rounded-circle" width="80">
                       <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <div class="mb-3">
@@ -469,6 +714,7 @@
   
                 </div>
               </div>
+
               <div class="carousel-item">
                 <div class="row">
                   <div class="col-md-4">
@@ -523,8 +769,8 @@
       
             <!-- Indicators/dots -->
             <div class="carousel-indicators">
-              <button type="button" data-bs-target="#demo4" data-bs-slide-to="0" class="active"></button>
-              <button type="button" data-bs-target="#demo4" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#clientCarousel" data-bs-slide-to="0" class="active"></button>
+              <button type="button" data-bs-target="#clientCarousel" data-bs-slide-to="1"></button>
             </div>
           </div>
     </div>
@@ -533,9 +779,9 @@
   <section style="background: url(../assets/images/footer-bg.png);">
     <div class="container px-md-5 text-white">
       <div class="row align-items-center">
-        <div class="col-md-6">
-          <p class="fw-semibold text-uppercase">| Get In Touch</p>
-          <h2>Hey! Feel Free to <br class="mbbr"><span class="text-primary">Contact</span> with our Experts</h2>
+        <div class="col-md-6 wow slideInLeft">
+          <p class="fw-semibold text-uppercase wow slideInLeft">| Get In Touch</p>
+          <h2 class="wow slideInLeft">Hey! Feel Free to <br class="mbbr"><span class="text-primary">Contact</span> with our Experts</h2>
   
           <div class="row mt-5">
             <div class="col-md-6">
@@ -583,9 +829,9 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 wow slideInRight">
           <div class="formdiv">
-            <h3 class="my-4">Right Us Your Query</h3>
+            <h4 class="my-4 pt-2">Right Us Your Query</h4>
           <form>
             <div class="row">
               <div class="col-md-6">
@@ -616,7 +862,7 @@
               <textarea matInput placeholder="Drop us a Line" rows="4"></textarea>
             </mat-form-field>
   
-            <button mat-raised-button class="mt-3 w-100 bg-Query">Submit Query</button>
+            <button mat-raised-button class="mt-2 w-100 bg-Query">Submit Query</button>
           </form>
         </div>
         </div>
