@@ -1,1 +1,98 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif !important;
+}
+
+*:not(.mat-icon) {
+    font-family: 'Inter', sans-serif !important;
+}
+
+.bg-blue {
+    background-color: #0C5ADB;
+}
+
+.text-gray {
+    color: #333333;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.missionTab {
+    .mat-tab-header {
+        border: 0;
+    }
+
+    .mat-tab-label {
+        border-radius: 30px;
+        border: 0.5px solid #D7D7D7;
+        background: #FFF;
+        margin-right: 15px;
+        color: #333;
+        opacity: 1;
+        min-width: 135px;
+        min-width: 140px;
+        height: 40px;
+    }
+
+    .mat-tab-label-active {
+        background: #0C5ADB;
+        color: #FFF;
+    }
+
+    .mat-ink-bar {
+        display: none;
+    }
+}
+
+.mat-expansion-panel {
+    border-radius: 5px !important;
+    box-shadow: none !important;
+}
+
+.mat-expansion-panel-header:hover,
+.mat-expansion-panel-header.mat-expanded {
+    background: inherit !important;
+}
+
+.mat-form-field-flex {
+    position: relative;
+    display: flex;
+    align-items: stretch;
+    min-height: 48px;
+    border-radius: 6px;
+    padding: 0 16px;
+    border-radius: 3px;
+    background: #FFF;
+    color: #333333;
+
+    .mat-form-field-underline {
+        display: none;
+    }
+}
+
+@media (min-width:900px) {
+    .w-35 {
+        width: 35%;
+    }
+}
+@media (max-width:767px) {
+    h1 {
+        font-size: calc(1.375rem + 0.5vw);
+    }
+    h2 {
+        font-size: calc(1.325rem + .2vw);
+    }
+    .carousel-indicators{
+        margin-left: 15% !important;
+        margin-right: 15% !important;
+    }
+}
