@@ -75,13 +75,19 @@ section {
     border-radius: 3px;
     background: #FFF;
     color: #333333;
-
-    .mat-form-field-underline {
-        display: none;
-    }
+}
+.mat-form-field.mat-focused .mat-form-field-label{
+    color: #0C5ADB;
+}
+.mat-form-field-underline {
+    display: none;
 }
 
-@media (min-width:900px) {}
+@media (min-width:900px) {
+    .map{
+        height: 400px;
+    }
+}
 
 @media (max-width:767px) {
     h1 {
