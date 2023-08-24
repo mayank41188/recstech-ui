@@ -67,13 +67,6 @@ mat-toolbar-row {
     }
 }
 
-section {
-    padding: 50px 0;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
-}
-
 .service-1,
 .service-2,
 .service-3,
@@ -308,4 +301,7 @@ section {
         background: url(../../assets/images/backgroung.png) !important;
     }
     section:last-child{text-align: center;}
+    .clientcarousel .carousel-indicators{
+        justify-content: center;
+    }
 }

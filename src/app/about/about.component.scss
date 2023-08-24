@@ -1,127 +1,40 @@
-mat-toolbar-row {
-    &:first-child {
-        font-size: 13px;
-
-        .mat-icon {
-            font-size: 20px;
-            margin-right: 3px;
-            height: 20px;
-        }
-
-        img {
-            margin-right: 10px;
-        }
-    }
-}
-
-.bg-blue {
-    height: 40px;
-}
-
-.searchbtn {
-    background: #0C5ADB;
-    color: #ffffff;
-    width: 30px;
-    height: 34px;
-    border: none;
-    border-radius: 5px;
-}
-
-.banner {
-    height: 600px;
-    position: relative;
-
-    p {
-        color: #fff;
-    }
+.mat-card {
+    border-radius: 10px;
+    border: 1px solid #D8D8D8;
+    background: #FFF;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.10);
+    padding: 30px;
 
     img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
+        height: 80px;
     }
 
-    .bennertext {
-        position: absolute;
-        top: 25%;
-        left: 8%;
-        color: #ffffff;
+    p:last-child {
+        margin: 0;
     }
-
-    .tagp {
-        border-radius: 2px;
-        background: rgba(255, 255, 255, 0.40);
-        padding-right: 8px;
-        padding-left: 25px;
-        display: flex;
-        align-items: center;
-        font-size: 12px;
+}
+.aboutimg{
+    height: 350px;
+    object-fit: contain;
+}
+#aboutcarousel,
+.teamcarousel,.clientcarousel {
+    .carousel-indicators {
         position: relative;
-        width: fit-content;
+        margin-top: 40px;
 
-        .mat-icon {
-            position: absolute;
-            bottom: 10px;
-            left: 0;
+        .active {
+            background-color: #2859D3;
+        }
+
+        [data-bs-target] {
+            opacity: 1;
         }
     }
 }
-
-section {
-    padding: 50px 0;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
-    background-position: center !important;
+.clientcarousel {
+    .carousel-indicators { justify-content: end; margin-right: 0;}
 }
-
-.service-1,
-.service-2,
-.service-3,
-.service-4 {
-    border-radius: 4px;
-    border: 2px solid #FF9A62;
-    background: inherit;
-    color: #FFFFFF;
-    height: 100%;
-
-    .mat-icon {
-        color: #FF9A62;
-    }
-
-    button {
-        position: relative;
-        bottom: -30px;
-    }
-
-    p {
-        color: #fff;
-    }
-}
-
-.service-2 {
-    border-color: #2975FF;
-
-    .mat-icon {
-        color: #2975FF;
-    }
-}
-
-.service-3 {
-    border-color: #55D7AF;
-
-    .mat-icon {
-        color: #55D7AF;
-    }
-}
-
-.service-4 {
-    border-color: #F05D8A;
-
-    .mat-icon {
-        color: #F05D8A;
-    }
-}
-
 .Cservice {
     .carousel-inner {
         margin: 50px 0 25px;
@@ -154,73 +67,6 @@ section {
     }
 }
 
-.mat-card {
-    padding: 30px;
-    box-shadow: none;
-    border-radius: 10px;
-}
-
-.mb-50 {
-    margin-bottom: 50px;
-}
-
-.techCarousel,
-.clientcarousel {
-    .carousel-indicators {
-        [data-bs-target] {
-            opacity: 1;
-        }
-
-        position: relative;
-        margin-top: 20px;
-
-        .active {
-            background-color: #2859D3;
-        }
-    }
-}
-
-.clientcarousel .carousel-indicators {
-    justify-content: end;
-    margin-right: 0;
-}
-
-.techcard {
-    position: relative;
-    min-height: 185px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    &:hover .techDiv {
-        opacity: 1;
-        top: 20%;
-        bottom: inherit;
-        transform: translateY(-20%);
-    }
-}
-
-.techDiv {
-    border-radius: 10px;
-    background: #2859D3;
-    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.10);
-    color: #fff;
-    font-size: 12px;
-    height: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    padding: 12px;
-    transition: .5s;
-    transform: translateY(-50%);
-    opacity: 0;
-}
-
 .teamcard {
     position: relative;
     cursor: pointer;
@@ -244,68 +90,6 @@ section {
         transition: all 0.3s ease-out 0s;
     }
 }
-
-.bg-Query {
-    background: #333;
-    height: 42px;
-    color: #fff;
-}
-
-.formdiv {
-    background: url(../../assets/images/form-bg.png);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    padding: 30px;
-    border-radius: 10px;
-}
-
-.products {
-    img {
-        height: 35px;
-        margin-bottom: 10px;
-    }
-
-    p {
-        min-height: 84px;
-    }
-}
-
 @media (max-width:767px) {
-    .mbbr {
-        display: none;
-    }
-
-    .bg-blue {
-        height: auto;
-        padding: 10px;
-        flex-wrap: wrap;
-
-        p {
-            font-size: 12.5px;
-        }
-    }
-
-    section {
-        background-color: #f5f5f7;
-    }
-
-    .navbar-nav {
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding: 0 5px;
-    }
-    .banner{
-        height:300px;
-        .bennertext{
-            top: 12%;
-            left: 4%;
-        }
-    }
-    .tech-bg{
-        background: url(../../assets/images/backgroung.png) !important;
-    }
-    section:last-child{text-align: center;}
+    .aboutimg{height: auto;}
 }

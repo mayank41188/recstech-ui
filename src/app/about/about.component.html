@@ -1,89 +1,86 @@
 <app-header heading="About"></app-header>
 
-<section style="background: url('../assets/images/backgroung.png');">
+<section style="background: url('../../assets/images/backgroung.png');">
     <div class="container px-md-5">
-        <div class="row align-items-center space-between">
-            <div class="col-md-8">
-                <p class="text-primary fw-semibold">| ABOUT RECSTECH</p>
-                <h2>Most Trusted IT Solution <br class="mbbr">& Business <span class="text-primary">Agency</span></h2>
-                <p class="mt-4">Recstech technologies is one of the premier software development firms developing and
+        <div class="row">
+            <div class="col-md-7">
+                <p class="text-primary fw-semibold wow slideInLeft">| ABOUT RECSTECH</p>
+                <h2 class="wow slideInLeft">Most Trusted IT Solution <br class="mbbr">& Business <span
+                        class="text-primary">Agency</span></h2>
+                <p class="mt-4 wow fadeInUp">Recstech technologies is one of the premier software development firms
+                    developing and
                     delivering computer
                     software development, business intelligence applications, custom software development services,
                     workflow application development, desktop applications.</p>
 
-                <mat-label>
-                    <p><b>Dibakar Mitra</b>
-                        <br>CEO & Founder
-                    </p>
-                </mat-label>
+                <h6 class="m-0 wow fadeInUp" data-wow-delay="0.2s">Dibakar Mitra</h6>
+                <p class="wow fadeInUp" data-wow-delay="0.3s">CEO & Founder</p>
+            </div>
+
+            <div class="col-md-5 text-end">
+                <img src="../assets/images/about-1.png" alt="" class="mb-3 aboutimg wow slideInRight">
+            </div>
+        </div>
+
+        <div id="aboutcarousel" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <mat-card class="text-center mb-4 wow fadeInLeftBig">
+                                <img src="../assets/images/trusted-services.svg" alt="" class="mb-3 " width="80">
+                                <h4 class="mt-3">Trusted Services</h4>
+                                <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </mat-card>
+                        </div>
+                        <div class="col-md-4">
+                            <mat-card class="text-center mb-4 wow fadeInLeftBig" data-wow-delay="0.2s">
+                                <img src="../../assets/images/experienced-engineers.svg" alt="" class="mb-3 "
+                                    width="80">
+                                <h4 class="mt-3">Experienced Engineers</h4>
+                                <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </mat-card>
+                        </div>
+                        <div class="col-md-4">
+                            <mat-card class="text-center mb-4 wow fadeInLeftBig" data-wow-delay="0.4s">
+                                <img src="../../assets/images/trusted-services-1.svg" alt="" class="mb-3 " width="80">
+                                <h4 class="mt-3">Trusted Services</h4>
+                                <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                            </mat-card>
+                        </div>
+                    </div>
+                </div>
 
             </div>
-            <div class="col-md-4">
-                <img src="../assets/images/about-1.png" alt="" class="mb-3" width="352">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#aboutcarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#aboutcarousel" data-bs-slide-to="1"></button>
             </div>
         </div>
     </div>
-
-    <div id="demo4" class="carousel clientcarousel slide mt-5" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="row">
-                    <div class="col-md-4">
-                        <mat-card class="text-center mb-4">
-                            <img src="../assets/images/trusted-services.svg" alt="" class="mb-3 " width="80">
-                            <h4 class="mt-3">Trusted Services</h4>
-                            <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </mat-card>
-                    </div>
-                    <div class="col-md-4">
-                        <mat-card class="text-center mb-4">
-                            <img src="../assets/images/trusted-services.svg" alt="" class="mb-3 " width="80">
-                            <h4 class="mt-3">Trusted Services</h4>
-                            <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </mat-card>
-                    </div>
-                    <div class="col-md-4">
-                        <mat-card class="text-center mb-4">
-                            <img src="../assets/images/trusted-services.svg" alt="" class="mb-3 " width="80">
-                            <h4 class="mt-3">Trusted Services</h4>
-                            <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                        </mat-card>
-                    </div>
-
-
-
-                </div>
-            </div>
-
-        </div>
-
-        <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#demo4" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#demo4" data-bs-slide-to="1"></button>
-        </div>
-    </div> 
 </section>
 
 
 
 <section class="bg-dark text-white" style="background: url(../assets/images/blue-bg.png);">
     <div class="container px-md-5">
-        <h2 class="text-center mx-auto">Our Awesome <span class="text-primary">Creative</span> <br class="mbbr"> Team
-            Members</h2>
+        <h2 class="text-center mx-auto wow slideInDown">Our Awesome <span class="text-primary">Creative</span> <br
+                class="mbbr"> Team Members</h2>
 
-        <div id="demo3" class="carousel slide Cservice">
+        <div id="teamcarousel" class="carousel slide Cservice">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row">
                         <div class="col-md-3">
-                            <div class="mb-4 teamcard">
+                            <div class="mb-4 teamcard wow fadeInUpBig">
                                 <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
                                 <div class="teamcontent">
-                                    <h6>Dipankar Mitra</h6>
+                                    <h6 class="m-0">Dipankar Mitra</h6>
                                     <p>Group MD & CEO</p>
                                     <div class="d-flex">
                                         <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
@@ -94,10 +91,10 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="mb-4 teamcard">
+                            <div class="mb-4 teamcard wow fadeInUpBig" data-wow-delay="0.2s">
                                 <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
                                 <div class="teamcontent">
-                                    <h6>Dipankar Mitra</h6>
+                                    <h6 class="m-0">Dipankar Mitra</h6>
                                     <p>Group MD & CEO</p>
                                     <div class="d-flex">
                                         <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
@@ -108,10 +105,10 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="mb-4 teamcard">
+                            <div class="mb-4 teamcard wow fadeInUpBig" data-wow-delay="0.4s">
                                 <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
                                 <div class="teamcontent">
-                                    <h6>Dipankar Mitra</h6>
+                                    <h6 class="m-0">Dipankar Mitra</h6>
                                     <p>Group MD & CEO</p>
                                     <div class="d-flex">
                                         <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
@@ -122,10 +119,10 @@
                             </div>
                         </div>
                         <div class="col-md-3">
-                            <div class="mb-4 teamcard">
+                            <div class="mb-4 teamcard wow fadeInUpBig" data-wow-delay="0.6s">
                                 <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
                                 <div class="teamcontent">
-                                    <h6>Dipankar Mitra</h6>
+                                    <h6 class="m-0">Dipankar Mitra</h6>
                                     <p>Group MD & CEO</p>
                                     <div class="d-flex">
                                         <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
@@ -137,20 +134,141 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="carousel-item"></div> -->
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="mb-4 teamcard">
+                                <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
+                                <div class="teamcontent">
+                                    <h6 class="m-0">Dipankar Mitra</h6>
+                                    <p>Group MD & CEO</p>
+                                    <div class="d-flex">
+                                        <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
+                                        <a href="" class="me-2"><img src="../assets/icons/instagram.svg" alt=""></a>
+                                        <a href="" class="me-2"><img src="../assets/icons/facebook.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-4 teamcard">
+                                <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
+                                <div class="teamcontent">
+                                    <h6 class="m-0">Dipankar Mitra</h6>
+                                    <p>Group MD & CEO</p>
+                                    <div class="d-flex">
+                                        <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
+                                        <a href="" class="me-2"><img src="../assets/icons/instagram.svg" alt=""></a>
+                                        <a href="" class="me-2"><img src="../assets/icons/facebook.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-4 teamcard">
+                                <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
+                                <div class="teamcontent">
+                                    <h6 class="m-0">Dipankar Mitra</h6>
+                                    <p>Group MD & CEO</p>
+                                    <div class="d-flex">
+                                        <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
+                                        <a href="" class="me-2"><img src="../assets/icons/instagram.svg" alt=""></a>
+                                        <a href="" class="me-2"><img src="../assets/icons/facebook.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-4 teamcard">
+                                <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
+                                <div class="teamcontent">
+                                    <h6 class="m-0">Dipankar Mitra</h6>
+                                    <p>Group MD & CEO</p>
+                                    <div class="d-flex">
+                                        <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
+                                        <a href="" class="me-2"><img src="../assets/icons/instagram.svg" alt=""></a>
+                                        <a href="" class="me-2"><img src="../assets/icons/facebook.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="mb-4 teamcard">
+                                <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
+                                <div class="teamcontent">
+                                    <h6 class="m-0">Dipankar Mitra</h6>
+                                    <p>Group MD & CEO</p>
+                                    <div class="d-flex">
+                                        <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
+                                        <a href="" class="me-2"><img src="../assets/icons/instagram.svg" alt=""></a>
+                                        <a href="" class="me-2"><img src="../assets/icons/facebook.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-4 teamcard">
+                                <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
+                                <div class="teamcontent">
+                                    <h6 class="m-0">Dipankar Mitra</h6>
+                                    <p>Group MD & CEO</p>
+                                    <div class="d-flex">
+                                        <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
+                                        <a href="" class="me-2"><img src="../assets/icons/instagram.svg" alt=""></a>
+                                        <a href="" class="me-2"><img src="../assets/icons/facebook.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-4 teamcard">
+                                <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
+                                <div class="teamcontent">
+                                    <h6 class="m-0">Dipankar Mitra</h6>
+                                    <p>Group MD & CEO</p>
+                                    <div class="d-flex">
+                                        <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
+                                        <a href="" class="me-2"><img src="../assets/icons/instagram.svg" alt=""></a>
+                                        <a href="" class="me-2"><img src="../assets/icons/facebook.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-4 teamcard">
+                                <img src="../assets/images/team-1.png" alt="" class="w-100 h-100">
+                                <div class="teamcontent">
+                                    <h6 class="m-0">Dipankar Mitra</h6>
+                                    <p>Group MD & CEO</p>
+                                    <div class="d-flex">
+                                        <a href="" class="me-2"><img src="../assets/icons/linkedin.png" alt=""></a>
+                                        <a href="" class="me-2"><img src="../assets/icons/instagram.svg" alt=""></a>
+                                        <a href="" class="me-2"><img src="../assets/icons/facebook.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- Indicators/dots -->
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo3" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo3" data-bs-slide-to="1"></button>
-                <button type="button" data-bs-target="#demo3" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#teamcarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#teamcarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#teamcarousel" data-bs-slide-to="2"></button>
             </div>
             <!-- Left and right controls/icons -->
-            <button class="carousel-control-prev" type="button" data-bs-target="#demo3" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#teamcarousel" data-bs-slide="prev">
                 <img src="../assets/icons/prev.svg" alt="">
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo3" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#teamcarousel" data-bs-slide="next">
                 <img src="../assets/icons/next.svg" alt="">
             </button>
         </div>
@@ -158,18 +276,36 @@
     </div>
 </section>
 
-<section style="background: url(../assets/images/backgroung.png);">
+<section style="background: url(../../assets/images/client-bg.png);">
     <div class="container px-md-5">
 
-        <p class="text-primary fw-semibold text-uppercase">| CLIENT REVIEWS</p>
-        <h2>What <span class="text-primary">People And Clients</span> <br class="mbbr"> Think About Us?</h2>
+        <p class="text-primary fw-semibold text-uppercase wow slideInLeft">| CLIENT REVIEWS</p>
+        <h2 class="wow slideInLeft">What <span class="text-primary">People And Clients</span> <br class="mbbr"> Think
+            About Us?</h2>
 
-        <div id="demo4" class="carousel clientcarousel slide mt-5" data-bs-ride="carousel">
+        <div id="clientCarousel" class="carousel clientcarousel slide mt-5" data-bs-ride="carousel">
             <div class="carousel-inner">
+    
                 <div class="carousel-item active">
                     <div class="row">
                         <div class="col-md-4">
-                            <mat-card class="text-center mb-4">
+                            <mat-card class="text-center mb-4 wow fadeInDownBig">
+                                <img src="../assets/images/team-1.png" alt="" class="mb-3 rounded-circle" width="80">
+                                <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <div class="mb-3">
+                                    <mat-icon class="text-primary">star_rate</mat-icon>
+                                    <mat-icon class="text-primary">star_rate</mat-icon>
+                                    <mat-icon class="text-primary">star_rate</mat-icon>
+                                    <mat-icon class="text-primary">star_rate</mat-icon>
+                                    <mat-icon class="text-primary">star_rate</mat-icon>
+                                </div>
+                                <h6 class="mb-1">Mohd Amir</h6>
+                                <p class="text-primary m-0">LOGit Project</p>
+                            </mat-card>
+                        </div>
+                        <div class="col-md-4">
+                            <mat-card class="text-center mb-4 wow fadeInDownBig" data-wow-delay="0.2s">
                                 <img src="../assets/images/team-1.png" alt="" class="mb-3 rounded-circle" width="80">
                                 <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -185,7 +321,7 @@
                             </mat-card>
                         </div>
                         <div class="col-md-4">
-                            <mat-card class="text-center mb-4">
+                            <mat-card class="text-center mb-4 wow fadeInDownBig" data-wow-delay="0.4s">
                                 <img src="../assets/images/team-1.png" alt="" class="mb-3 rounded-circle" width="80">
                                 <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                                     eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -196,29 +332,14 @@
                                     <mat-icon class="text-primary">star_rate</mat-icon>
                                     <mat-icon class="text-primary">star_rate</mat-icon>
                                 </div>
-                                <h6 class="mb-1">Mohd Javeed</h6>
-                                <p class="text-primary m-0">DMS Project</p>
-                            </mat-card>
-                        </div>
-                        <div class="col-md-4">
-                            <mat-card class="text-center mb-4">
-                                <img src="../assets/images/team-1.png" alt="" class="mb-3 rounded-circle" width="80">
-                                <p class="text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <div class="mb-3">
-                                    <mat-icon class="text-primary">star_rate</mat-icon>
-                                    <mat-icon class="text-primary">star_rate</mat-icon>
-                                    <mat-icon class="text-primary">star_rate</mat-icon>
-                                    <mat-icon class="text-primary">star_rate</mat-icon>
-                                    <mat-icon class="text-primary">star_rate</mat-icon>
-                                </div>
-                                <h6 class="mb-1">Mohd Javeed</h6>
-                                <p class="text-primary m-0">DMS Project</p>
+                                <h6 class="mb-1">Salman</h6>
+                                <p class="text-primary m-0">Proficient Project</p>
                             </mat-card>
                         </div>
 
                     </div>
                 </div>
+
                 <div class="carousel-item">
                     <div class="row">
                         <div class="col-md-4">
@@ -276,8 +397,8 @@
 
             <!-- Indicators/dots -->
             <div class="carousel-indicators">
-                <button type="button" data-bs-target="#demo4" data-bs-slide-to="0" class="active"></button>
-                <button type="button" data-bs-target="#demo4" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#clientCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#clientCarousel" data-bs-slide-to="1"></button>
             </div>
         </div>
     </div>
